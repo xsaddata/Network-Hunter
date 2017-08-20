@@ -1,0 +1,13 @@
+<script type="text/javascript" href="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.0.0/userinfo.min.js"></script>
+<script type="text/javascript">
+UserInfo.getInfo(function(data) {
+  // the "data" object contains the info
+  if (data.country.code == 'CN') {
+    document.write("NO");
+  } else {
+    document.write("YES");
+  }
+}, function(err) {
+  document.write("NO");
+});
+</script>
