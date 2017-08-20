@@ -11,6 +11,14 @@
 .ab a:visited{color:#000000;}
 .small{font-size: small;}
 </style>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+$.getJSON('//api.wipmania.com/jsonp?callback=?', function (data) { 
+  if ( data.address.country_code == 'CN' ) {
+    window.location.href="/ban.html";
+  }
+});
+</script>
 </head>
 <body>
 <center>
